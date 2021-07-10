@@ -98,85 +98,57 @@
             background-color: rgb(250 246 246);
 
         }
-        *{box-sizing: border-box;}
-        ul {list-style-type:none;}
-        body {font-family:Verdana,sans-serif;}
-        /*month header*/
-        .month{
-            padding: 70px 25px;
-            width: 100%;
-            background:labc9c ;
-            text-align:center;
-        }
-        /*month list*/
-        .month ul {
-            margin: 0;
-            padding:0;
-        }
-        .month ul li{
-            color:white;
-            font-size:20px;
-            text-transform:uppercase;
-            letter-spacing: 3px;
-        }
-        /*previous button inside month header*/
-        .month.prev{
-            float:left;
-            padding: top 10px;
-        }
-        /*next button*/
-        .month.next{
-            float:right;
-            padding-top:10px;
-        }
-        /*Weekdays mon - sun*/
-        .weekdays{
-            margin:0;
-            padding:10px 0;
-            background-color:#ddd;
-
-        }
-        .weekdays li{
-            display:inline-block;
-            width:13.6%;
-            color:#666;
-            text-align:center;
-        }
-        /*days (1-31)*/
-        .days {
-            padding :10px 0;
-            background:#eee;
-            margin:0;
-
-        }
-        .days.li{
-            list-style-type:none;
-            display:inline-block;
-            width:13.6%;
-            text-align:center;
-            margin-bottom:5px;
-            font-size:12px;
-            color:#777;
-
-        }
-        /*highlight the "current" day */
-        .days li.active{
-            padding:5px;
-            background:labc9c;
-            color:white !important
-        } /* Add media queries for smaller screens */
-        @media screen and (max-width:720px){.weekdays li,.days li{width:13.1%}
-    }
-    @media screen and (max-width:290px)
-    {.weekdays li,days li {width:12,2%}
-
-}
+        
 .h2{
     display:block;
     margin:auto;
     width: 30px;
     font-size:50 px;
 }
+h2{
+    display:block;
+    margin:auto;
+    width: 30%;
+    font-size: xx-large;
+    /* font-style: b */
+}
+h3{
+    font-size:medium;
+}
+.content{
+    max-width: 800px;
+    margin: auto;
+    font-family: sans-serif;
+}
+.month{
+    text-align: center;
+    background: purple;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    padding: 25px;
+    border: 1px solid skyblue;
+
+}
+table,th,td{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 17px;
+    border-collapse: collapse;
+    border: 1px solid skyblue;
+
+}
+tr,th,td{
+    padding: 15px;
+}
+    th{
+        background-color: red;
+        color: white;
+    }
+    td{
+        background: #3c8a4e;
+    }
+
 
     </style>
 </head>
@@ -239,70 +211,77 @@
         <h2>Set your Routine now <!DOCTYPE html></h2>
 
 
+        <h1>Choose your Routine !!</h1>
+        <div class="content">
+            <div class="month">
+                <strong>July</strong>
+                <br>
+                <strong>2021</strong>
+            </div>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3<td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+            </tr>
+        
+            </table>
+        </div>
+        </div>
+        </body>
+        </html>
+        
 
 
 
-
-        <h1>CSS CALENDER</h1>
-
-<div 
-class="month">
-    <ul>
-        <li
-            class="prev">&#10094;</li>
-            <li
-            class="next">&#10095;</li>
-            <li>August<br><span style="font-size: 18px">2021</span></li>
-    </ul>
-</div>
-<ul class="weekdays">
-    <li>mon</li>
-    <li>tue</li>
-    <li>wed</li>
-    <li>thu</li>
-    <li>fri</li>
-    <li>sat</li>
-    <li>sun</li>
-    
-</ul>
-<ul class ="days">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-    <li>6</li>
-    <li>7</li>
-    <li>8</li>
-    <li>9</li>
-    <li><span class="active">10</span>
-    </li>
-    <li>11</li>
-    <li>12</li>
-    <li>13</li>
-    <li>14</li>
-    <li>15</li>
-    <li>16</li>
-    <li>17</li>
-    <li>18</li>
-    <li>19</li>
-    <li>20</li>
-    <li>21</li>
-    <li>22</li>
-    <li>23</li>
-    <li>24</li>
-    <li>25</li>
-    <li>26</li>
-    <li>27</li>
-    <li>28</li>
-    <li>29</li>
-    <li>30</li>
-    <li>31</li>
-
-</ul>
-</body>
-</html>
-
-
-
-
+        
